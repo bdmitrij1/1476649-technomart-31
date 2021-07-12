@@ -16,21 +16,25 @@
   <header class="main-head">
     <nav class="main-navigation">
       <div class="main-navigation-block-1">
-        <div class="center">
-          <a class="main-header-logo">
-            <img src="img/icon/logo.png" alt="Перейти на главную страницу" width="220" height="47">
-          </a>
-          <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
-            <input class="search-form-input" type="search" value="Поиск:">
-            <input type="submit" name="search" value="Поиск">
-          </form>
-          <a class="bookmarks" href="blank.html">Закладки: 0</a>
-          <a class="basket" href="blank.html">Корзина: 0</a>
-          <a class="checkout" href="blank.html">Оформить заказ</a>
+        <div class="center main-navigation-block-1-flex">
+          <div class="logo-and-form">
+            <a class="main-header-logo">
+              <img src="img/icon/logo.png" alt="Перейти на главную страницу" width="220" height="47">
+            </a>
+            <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
+              <input class="search-form-input" type="search" value="Поиск:">
+              <input type="submit" name="search" value="Поиск">
+            </form>
+          </div>
+          <div class="buy-buttons">
+            <a class="bookmarks" href="blank.html">Закладки: 0</a>
+            <a class="basket" href="blank.html">Корзина: 0</a>
+            <a class="checkout" href="blank.html">Оформить заказ</a>
+          </div>
         </div>
       </div>
       <div class="main-navigation-block-2">
-        <div class="center">
+        <div class="center main-navigation-block-2-flex">
           <p class="main-navigation-desc">
             Интернет-магазин<br>
             строительных материалов<br>
@@ -38,15 +42,17 @@
           </p>
           <p class="main-navigation-contacts">
             <a class="main-navigation-tel" href="tel:+78005558628">+7 800 555-86-28</a><br>
-            г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
+            <span class="main-navigation-adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</span>
           </p>
-          <a class="enter-link" href="blank.html">Войти</a>
-          <a class="registration-link" href="blank.html">Регистрация</a>
+          <div>
+            <a class="enter-link" href="blank.html">Войти</a>
+            <a class="registration-link" href="blank.html">Регистрация</a>
+          </div>
         </div>
       </div>
       <div class="center">
         <ul class="site-navigation">
-          <li><a></a>Главная</li>
+          <li><a>Главная</a></li>
           <li><a href="blank.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="blank.html">Новости</a></li>
@@ -58,8 +64,8 @@
     </nav>
   </header>
   <main>
-    <div class="center">
-      <h1>Техномарт - магазин строительных материалов</h1>
+    <div>
+      <h1 class="center">Техномарт - магазин строительных материалов</h1>
       <section class="assortment center">
         <h2>Ассортимент магазина</h2>
         <ul class="assortment-list">
@@ -212,29 +218,32 @@
      </ul>
     </section>
     <section class="services">
-      <div class="center">
+      <div class="center services-div">
         <h2>Сервисы</h2>
         <p>
           Хороший интернет-магазин отличается от плохого не только ценами!<br>
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <ul class="services-list">
-          <li class="services-item">Доставка</li>
-          <li class="services-item">Гарантии</li>
-          <li class="services-item">Кредит</li>
-        </ul>
-        <div>
-          <h3>Доставка</h3>
-          <p>
-            Мы с удовольствием доставим ваш товар прямо<br>
-            к вашему подъезду совершенно бесплатно!<br>
-            Ведь мы неплохо заработаем,<br>
-            поднимая его на ваш этаж!
-          </p>
-      </div>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+        </p>
+        <div class="services-block-2">
+          <ul class="services-list">
+            <li class="services-item">Доставка</li>
+            <li class="services-item">Гарантии</li>
+            <li class="services-item">Кредит</li>
+          </ul>
+          <div>
+            <h3>Доставка</h3>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо<br>
+              к вашему подъезду совершенно бесплатно!<br>
+              Ведь мы неплохо заработаем,<br>
+              поднимая его на ваш этаж!
+            </p>
+         </div>
+        </div>
       <img src="https://via.placeholder.com/150x100" width="300" height="99" alt="Доставка">
       </div>
     </section>
-    <div class="center">
+    <div class="center about-company-and-contacts">
       <section class="about-company">
         <h2>Компания "Техномарт"</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -255,7 +264,7 @@
           Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
         <a href="#"><img class="contacts-maps" src="img/maps.png" width="300" height="158" alt="Наш офис на карте"></a>
-        <button class="button" type="button">Заблудились? Напишите нам!</button>
+        <button class="button button-contacts" type="button">Заблудились? Напишите нам!</button>
       </section>
     </div>
   </main>
@@ -278,11 +287,13 @@
             <li class="footer-nav-item"><a href="catalog.html">Каталог</a></li>
             <li class="footer-nav-item"><a href="blank.html">Доставка</a></li>
             <li class="footer-nav-item"><a href="blank.html">Контакты</a></li>
+           </ul>
+
+           <ul class="footer-nav-list-2">
             <li class="footer-nav-item footer-nav-item-yellow"><a href="blank.html">Материалы</a></li>
             <li class="footer-nav-item footer-nav-item-yellow"><a href="blank.html">Техника</a></li>
             <li class="footer-nav-item footer-nav-item-yellow"><a href="blank.html">Инструмент</a></li>
-            <li class="footer-nav-item footer-nav-item-yellow"><a href="blank.html">Спецпредложения</a></li>
-            <!-- Последнии четыре пункта включил в один список ul. Вышло 9 пунктов. Так как в шапке, к примеру, Спецпредложения находятся в одном списке с Контактами -->
+            <li class="footer-nav-item footer-nav-item-yellow footer-nav-item-2"><a href="blank.html">Спецпредложения</a></li>
            </ul>
         </section>
       </div>
@@ -325,18 +336,23 @@
   <section class="contacts-popup">
     <h2>Форма контактов</h2>
     <form class="contacts-popup-form" action="https://echo.htmlacademy.ru" method="post">
-    <label for="contact-name">Ваше имя</label>
-    <input class="contacts-popup-form-name" type="text" name="name" id="contact-name" placeholder="Имя Фамилия">
 
-    <label for="contact-email">Ваш e-mail:</label>
-    <input class="contacts-popup-form-email" type="email" name="email" id="contact-email" placeholder="email@example.com">
-    <br>
+    <div class="contacts-popup-form-name">
+      <label for="contact-name">Ваше имя</label>
+      <input class="contacts-popup-form-name-input" type="text" name="name" id="contact-name" placeholder="Имя Фамилия">
+    </div>
 
-    <label for="contact-text">Текст письма:</label>
-    <textarea class="contacts-popup-form-text" name="text" id="contact-text" rows="10" cols="40" placeholder="В свободной форме"></textarea>
-    <br>
+    <div class="contacts-popup-form-email">
+      <label for="contact-email">Ваш e-mail:</label>
+      <input class="contacts-popup-form-email-input" type="email" name="email" id="contact-email" placeholder="email@example.com">
+    </div>
 
-    <input class="button" type="submit" value="Отправить">
+    <div class="contacts-popup-form-text">
+      <label for="contact-text">Текст письма:</label>
+      <textarea class="contacts-popup-form-text-input" name="text" id="contact-text" rows="10" cols="40" placeholder="В свободной форме"></textarea>
+    </div>
+
+    <input class="button button-popup" type="submit" value="Отправить">
     </form>
     <button class="contacts-popup-close" type="button" name="close-window"></button>
   </section>
