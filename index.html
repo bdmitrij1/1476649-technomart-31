@@ -22,8 +22,7 @@
               <img src="img/icon/logo.png" alt="Перейти на главную страницу" width="220" height="47">
             </a>
             <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
-              <input class="search-form-input" type="search" value="Поиск:">
-              <input type="submit" name="search" value="Поиск">
+              <input class="search-form-input search-form-input-icon" type="search" value="Поиск:">
             </form>
           </div>
           <div class="buy-buttons">
@@ -65,44 +64,39 @@
   </header>
   <main>
     <div>
-      <h1 class="center">Техномарт - магазин строительных материалов</h1>
+      <h1 class="center visually-hidden">Техномарт - магазин строительных материалов</h1>
       <section class="assortment center">
-        <h2>Ассортимент магазина</h2>
+        <h2 class="visually-hidden">Ассортимент магазина</h2>
         <ul class="assortment-list">
           <li class="assortment-item assortment-item-material assortment-item-new">
             <h2>Материалы</h2>
             <a class="assortment-item-button" href="blank.html">
               <p>На любой вкус</p>
             </a>
-            <img src="https://via.placeholder.com/150x100" width="44" height="65" alt="Материалы">
           </li>
           <li class="assortment-item assortment-item-instruments">
             <h2>Инструмент</h2>
             <a class="assortment-item-button" href="blank.html">
               <p>На все случаи</p>
             </a>
-            <img src="https://via.placeholder.com/150x100" width="75" height="61" alt="Инструменты">
           </li>
           <li class="assortment-item assortment-item-technics">
             <h2>Техника</h2>
             <a class="assortment-item-button" href="blank.html">
               <p>Для стройки</p>
             </a>
-            <img src="https://via.placeholder.com/150x100" width="78" height="62" alt="Техника">
           </li>
           <li class="assortment-item assortment-item-discounts">
             <h2>Скидка 50%</h2>
             <a class="assortment-item-button" href="blank.html">
               <p>На 350 товаров</p>
             </a>
-            <img src="https://via.placeholder.com/150x100" width="59" height="72" alt="Скидка 50%">
           </li>
           <li class="assortment-item assortment-item-delivery">
             <h2>Доставка</h2>
             <a class="assortment-item-button" href="blank.html">
               <p>Бесплатно</p>
             </a>
-            <img src="https://via.placeholder.com/150x100" width="78" height="63" alt="Доставка">
           </li>
           <li class="assortment-item-slider">
             <div>
@@ -114,16 +108,16 @@
                   <a class="button" href="catalog.html">Открыть каталог</a>
                 </figcaption>
               </figure>
-              <!-- <figure class="assortment-slider">
+              <figure class="assortment-slider" style="display: none;">
                 <img src="img/assortment/drills.jpg" width="620" height="266" alt="Каталог с дрелями">
                 <figcaption>
                   <h2>Дрели</h2>
                   <p>Соседям на радость!</p>
                   <a class="button" href="catalog.html">Открыть каталог</a>
-               </figcaption>
-              </figure> -->
-              <button class="assortment-slider-back" type="button">Назад</button>
-              <button class="assortment-slider-next" type="button" disabled>Вперед</button>
+                </figcaption>
+              </figure>
+              <button class="assortment-slider-back" type="button" aria-label="Предыдущий слайд"></button>
+              <button class="assortment-slider-next" type="button" aria-label="Следующий слайд" disabled></button>
             </div>
           </li>
         </ul>
@@ -137,35 +131,35 @@
       <ul class="popular-production-list">
         <li class="popular-production-item">
           <h3>Перфоратор BOSCH BFG 9000</h3>
-          <p>
-            <del class="popular-production-del">32500 Р.</del><br>
+          <p class="popular-production-item-price">
+            <del class="popular-production-del">32500 Р.</del>
             <ins class="popular-production-ins">25500 Р.</ins>
           </p>
-          <img src="img/products/bosch-bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000 с усиленным отбойником">
+          <img src="img/products/bosch-bfg-9000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 9000 с усиленным отбойником">
         </li>
         <li class="popular-production-item">
           <h3>Перфоратор BOSCH BFG 3000</h3>
-          <p>
-            <del class="popular-production-del">22500 Р.</del><br>
+          <p class="popular-production-item-price">
+            <del class="popular-production-del">22500 Р.</del>
             <ins class="popular-production-ins">15500 Р.</ins>
           </p>
-          <img src="img/products/bosch-bfg-3000.jpg" width="184" height="164" alt="Новый перфоратор BOSCH BFG 3000 с увеличенным объёмом батареи">
+          <img src="img/products/bosch-bfg-3000.jpg" width="144" height="128" alt="Новый перфоратор BOSCH BFG 3000 с увеличенным объёмом батареи">
         </li>
         <li class="popular-production-item">
           <h3>Перфоратор BOSCH BFG 6000</h3>
-          <p>
-            <del class="popular-production-del">30500 Р.</del><br>
+          <p class="popular-production-item-price">
+            <del class="popular-production-del">30500 Р.</del>
             <ins class="popular-production-ins">25500 Р.</ins>
           </p>
-          <img src="img/products/bosch-bfg-6000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 6000 три в одном: дрель, отбойник и перфоратор">
+          <img src="img/products/bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000 три в одном: дрель, отбойник и перфоратор">
         </li>
         <li class="popular-production-item">
           <h3>Перфоратор BOSCHBFG 2000</h3>
-          <p>
-            <del class="popular-production-del">22500 Р.</del><br>
+          <p class="popular-production-item-price">
+            <del class="popular-production-del">22500 Р.</del>
             <ins class="popular-production-ins">12500 Р.</ins>
           </p>
-          <img src="img/products/bosch-bfg-2000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 2000 с отбегчённой рукояткой">
+          <img src="img/products/bosch-bfg-2000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000 с отбегчённой рукояткой">
         </li>
       </ul>
     </section>
@@ -220,17 +214,17 @@
     <section class="services">
       <div class="center services-div">
         <h2>Сервисы</h2>
-        <p>
+        <p class="services-description">
           Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
         <div class="services-block-2">
           <ul class="services-list">
-            <li class="services-item">Доставка</li>
+            <li class="services-item-current">Доставка</li>
             <li class="services-item">Гарантии</li>
             <li class="services-item">Кредит</li>
           </ul>
-          <div>
+          <div class="services-block-2-description services-block-2-delivery">
             <h3>Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо<br>
@@ -238,9 +232,25 @@
               Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!
             </p>
-         </div>
+          </div>
+          <div class="services-block-2-description services-block-2-warranty">
+            <h3>Гарантии</h3>
+            <p>
+              Если купленный у нас товар поломается или заискрит,<br>
+              а также в случае пожара, спровоцированного его<br>
+              возгоранием, вы всегда можете быть уверены в нашей<br>
+              гарантии. Мы обменяем сгоревший товар на новый.<br>
+              Дом уж восстановите как-нибудь сами.
+            </p>
+          </div>
+          <div class="services-block-2-description services-block-2-credit">
+            <h3>Кредит</h3>
+            <p>
+              Залезть в долговую яму стало проще!<br>
+              Кредитные консультанты придут вам на помощь.
+            </p>
+          </div>
         </div>
-      <img src="https://via.placeholder.com/150x100" width="300" height="99" alt="Доставка">
       </div>
     </section>
     <div class="center about-company-and-contacts">
@@ -263,7 +273,7 @@
         <p>
           Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
-        <a href="#"><img class="contacts-maps" src="img/maps.png" width="300" height="158" alt="Наш офис на карте"></a>
+        <a href="https://www.google.com/maps/"><img class="contacts-maps" src="img/maps.png" width="300" height="158" alt="Наш офис на карте"></a>
         <button class="button button-contacts" type="button">Заблудились? Напишите нам!</button>
       </section>
     </div>
@@ -272,7 +282,7 @@
     <div class="footer-block-1-fon">
       <div class="footer-block-1 center">
         <section class="footer-contacts">
-          <h2>Как нас найти</h2>
+          <h2 class="visually-hidden">Как нас найти</h2>
           <p>
             г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
             <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
@@ -280,21 +290,20 @@
           <img class="footer-logo" src="img/icon/logo-footer.png" alt="Логотип компании Техномарт" width="220" height="68">
         </section>
         <section class="footer-nav">
-          <h2>Меню</h2>
+          <h2 class="visually-hidden">Меню</h2>
           <ul class="footer-nav-list">
             <li class="footer-nav-item"><a href="blank.html">Компания</a></li>
             <li class="footer-nav-item"><a href="blank.html">Новости</a></li>
             <li class="footer-nav-item"><a href="catalog.html">Каталог</a></li>
             <li class="footer-nav-item"><a href="blank.html">Доставка</a></li>
             <li class="footer-nav-item"><a href="blank.html">Контакты</a></li>
-           </ul>
-
-           <ul class="footer-nav-list-2">
+          </ul>
+          <ul class="footer-nav-list-2">
             <li class="footer-nav-item footer-nav-item-yellow"><a href="blank.html">Материалы</a></li>
             <li class="footer-nav-item footer-nav-item-yellow"><a href="blank.html">Техника</a></li>
             <li class="footer-nav-item footer-nav-item-yellow"><a href="blank.html">Инструмент</a></li>
             <li class="footer-nav-item footer-nav-item-yellow footer-nav-item-2"><a href="blank.html">Спецпредложения</a></li>
-           </ul>
+          </ul>
         </section>
       </div>
     </div>
@@ -305,16 +314,22 @@
           Все права защищены
         </p>
         <section class="footer-social">
-          <h2>Социальные сети</h2>
+          <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social-list">
-            <li class="social-item">
-              <a href="#">VK</a>
+            <li class="social-item social-item-vk">
+              <a href="blank.html">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
             </li>
-            <li class="social-item">
-              <a href="#">Facebook</a>
+            <li class="social-item social-item-fb">
+              <a href="blank.html">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
             </li>
-            <li class="social-item">
-              <a href="#">Instagram</a>
+            <li class="social-item social-item-instagram">
+              <a href="blank.html">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
             </li>
           </ul>
         </section>
@@ -333,8 +348,8 @@
       </div>
     </div>
   </footer>
-  <section class="contacts-popup">
-    <h2>Форма контактов</h2>
+  <section class="modal contacts-popup">
+    <h2 class="visually-hidden">Форма контактов</h2>
     <form class="contacts-popup-form" action="https://echo.htmlacademy.ru" method="post">
 
     <div class="contacts-popup-form-name">
@@ -349,12 +364,18 @@
 
     <div class="contacts-popup-form-text">
       <label for="contact-text">Текст письма:</label>
-      <textarea class="contacts-popup-form-text-input" name="text" id="contact-text" rows="10" cols="40" placeholder="В свободной форме"></textarea>
+      <textarea class="contacts-popup-form-text-input" name="text" id="contact-text" rows="7" cols="40" placeholder="В свободной форме"></textarea>
     </div>
-
-    <input class="button button-popup" type="submit" value="Отправить">
     </form>
-    <button class="contacts-popup-close" type="button" name="close-window"></button>
+    <div class="contacts-popup-fon">
+      <input class="button button-popup" type="submit" value="Отправить">
+    </div>
+    <button class="modal-close" type="button" name="close-window" aria-label="Закрыть"></button>
+  </section>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Смотрите на карте как к нам добраться</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="943" height="449" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+    <button class="modal-close" type="button" name="close-window" aria-label="Закрыть"></button>
   </section>
 </body>
 </html>
