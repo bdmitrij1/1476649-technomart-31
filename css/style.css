@@ -138,7 +138,8 @@ a {
   cursor: pointer;
 }
 
-.main-header-logo img:active {
+.main-header-logo img:active,
+.footer-logo img:active {
   filter: brightness(0.8);
 }
 
