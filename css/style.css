@@ -304,6 +304,10 @@ a {
   margin-left: 10px;
 }
 
+.main-navigation-contacts-catalog {
+  margin-left: 33px;
+}
+
 .main-navigation-contacts a {
   color: var(--basic-red);
 }
@@ -321,6 +325,10 @@ a {
   margin-right: 5px;
 }
 
+.main-navigation-tel-catalog {
+  padding: 7px 50px 8px 73px;
+}
+
 .main-navigation-tel::before {
   content: "";
   position: absolute;
@@ -331,6 +339,11 @@ a {
   background-position: 0 0;
   top: 10px;
   left: 35px;
+}
+
+.main-navigation-tel-catalog::before {
+  top: 10px;
+  left: 37px;
 }
 
 .main-navigation-adress {
@@ -772,7 +785,7 @@ a {
 
 .popular-production-list-catalog {
   grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 48px;
+  margin-bottom: 46px;
 }
 
 .popular-production-item {
@@ -841,7 +854,7 @@ a {
   max-height: 184px;
   height: 164px;
   align-self: center;
-  margin-top: 6px;
+  margin-top: 4px;
   margin-bottom: 10px;
   object-fit: contain;
 }
@@ -1157,6 +1170,8 @@ a {
 
 .footer-logo {
   order: -1;
+  width: 220px;
+  cursor: pointer;
 }
 
 /* Footer-nav + footer-nav-list*/
@@ -1827,6 +1842,8 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 360px;
+  margin: 0;
+  padding: 0;
   margin-right: 15px;
 }
 
@@ -1862,13 +1879,20 @@ a {
   background-color: var(--basic-extra-beige);
 }
 
+.sorting-list li:nth-of-type(2) {
+  margin-left: 3px;
+}
+
+.sorting-list li:nth-of-type(3) {
+  margin-right: 6px;
+}
+
 .sorting-button {
   border: none;
   margin: 0;
   padding: 0;
   margin-left: 24px;
   background-color: var(--basic-extra-beige);
-
 }
 
 .sorting-button-max,
@@ -1973,21 +1997,25 @@ a {
 }
 
 .pagination-item {
-  width: 38px;
-  height: 38px;
+  width: 37px;
+  height: 37px;
   border: 1px solid var(--basic-border-grey);
   border-radius: 2px;
   text-align: center;
   line-height: 18px;
   text-transform: uppercase;
-  border-radius: 4px;
+  border-radius: 2px;
   display: flex;
-  margin-right: 10px;
+  margin-right: 8px;
+}
+
+.pagination-item:last-child {
+  margin-left: 2px;
 }
 
 .pagination-item:last-child {
   width: 140px;
-  height: 38px;
+  height: 37px;
   margin-right: 0px;
 }
 
